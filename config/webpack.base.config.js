@@ -6,13 +6,20 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const APP_DIR = path.resolve(__dirname, '../src'); // <===== new stuff added here
+const APP_DIR = path.resolve(__dirname, '../');
+
 
 module.exports = env => {
     const { PLATFORM, VERSION } = env;
     return merge([
         {
-            entry: ['@babel/polyfill', APP_DIR], // <===== new stuff added here
+            entry: {
+                main: ['@babel/polyfill', APP_DIR + "/src/index.js"]
+            },
+            output: {
+                path: path.resolve(__dirname, '../dist'),
+                filename: '[name].bundle.js',
+            },
             module: {
                 rules: [
                     {
@@ -32,7 +39,9 @@ module.exports = env => {
                     }
                 ]
             },
+
             plugins: [
+                new webpack.HashedModuleIdsPlugin(),
                 new HtmlWebpackPlugin({
                     template: './public/index.html',
                     filename: './index.html'
