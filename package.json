@@ -1,0 +1,19 @@
+{
+  "name": "atm_cbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NurTur/ATM_CBS.git"
+  },
+  "author": "Nurbolat Turgynbekov <nurbolatturgynbekov16@gmail.com> (example.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NurTur/ATM_CBS/issues"
+  },
+  "homepage": "https://github.com/NurTur/ATM_CBS#readme"
+}
