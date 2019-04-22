@@ -20,10 +20,14 @@ module.exports = env => {
                 path: path.resolve(__dirname, '../dist'),
                 filename: '[name].bundle.js',
             },
+            resolve: {
+                modules: ['node_modules', 'src'],
+                extensions: ['.js', '.jsx'],
+              },
             module: {
                 rules: [
                     {
-                        test: /\.js$/,
+                        test: /\.(js|jsx)$/,
                         exclude: /node_modules/,
                         use: {
                             loader: 'babel-loader'
@@ -36,6 +40,10 @@ module.exports = env => {
                             'css-loader',
                             'sass-loader'
                         ]
+                    },
+                    {
+                        test: /\.svg$/,
+                        loader: 'svg-inline-loader'
                     }
                 ]
             },
