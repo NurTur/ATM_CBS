@@ -1,0 +1,86 @@
+body{
+    background-color:#f0f0f0;
+    
+  }
+  .wrapper{
+    background-color:#FFF;
+    margin:50px;
+    padding:20px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.1);
+    
+  }
+  .center{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    height:50px;
+  }
+  
+  
+  .button-wrap{
+    margin-right: 25px;
+  }
+  .rad-button{
+    white-space:nowrap;
+    top:0px;
+    border-radius:4px;
+    position:relative;
+    border:none;
+    background:none;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    height: 50px;
+    cursor:pointer;
+    transition:0.1s all ease;
+    font-size : 16px;
+    font-weight: 300;
+    color:#777;
+    border-bottom: 1px solid #ccc;
+    box-shadow:0px 0px 0px 0px #B8B8B8; 
+    
+  
+    
+    
+    
+    &:focus{
+      outline:0;
+    }
+    
+    &:hover{ //primary hover
+      background-color:#f5f5f5;
+      top:-2px;
+      height:52px;
+      border-bottom: 4px solid #ccc;
+      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+      &.static{
+        top:0px;
+        height:50px;
+      }
+    }
+    
+  
+    
+ 
+    
+
+    
+ 
+    
+    &.wwt{
+      background-color:#32699b;
+      color:#DBE9F5;
+      border-bottom: 1px solid #1A4164;
+      &:hover{
+        background-color:#427BAE ;
+        top:-2px;
+        border-bottom: 4px solid #1A4164;
+        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+      }
+      &:active{
+        top:0px;
+        border: 1px solid #1A4164;
+        background-color:#255988;
+        box-shadow: inset 0px 0px 4px rgba(0,0,0,0.25);
+      }
+    }
+  }

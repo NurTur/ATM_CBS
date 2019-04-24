@@ -1,0 +1,110 @@
+@mixin flex(){ 
+   display: flex;
+   justify-content: center;
+   align-items:center;
+}
+
+#LoginPage
+{
+  background-color: rgb(228, 222, 222);
+  margin-top:-8px;
+  margin-left:-8px;
+  @include flex();
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+#formContainer {
+     display: flex;
+     flex-direction: row;   
+     min-width: 600px;
+     width:60vw;
+     height: 350px; 
+     border-radius: 5px;
+     #sec1 {
+      border-radius: 5px 0 0 5px;
+      background-color:  #384B5C;
+      width:40%;
+      height: 100%;
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      color:gainsboro; 
+       @include flex();
+     .alert{
+        @include flex();
+        flex-direction: column;
+      }   
+     }
+      #sec2 {
+       border-radius: 0 5px 5px 0;
+       background-color:  #262b30;
+       width:60%;
+       height: 100%;
+   
+.submit {
+  width: 100%;
+  height: 13%;
+  border-radius: 0 0 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: gainsboro;     
+  }    
+.opacity1 { opacity: 0.5; }
+.opacity2 { opacity: 1; }
+
+.color1 {  background: #32ACED;
+  border: 1px solid #32ACED; }
+.color2 {  background: #E0A905;
+  border: 1px solid #E0A905; }
+}
+}
+
+.ui-form {  
+  height: 87%;
+  width: 80%;
+  margin-left:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+.form-row {
+  margin-bottom: 40px;
+  position: relative;
+  input {
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+  color:gainsboro;
+  background: none;
+  border-width: 0;
+  border-bottom: 1px solid #9d959d;
+  transition: all 0.2s ease;
+}
+
+ label {
+  position: absolute;
+  color: #9d959d;
+  font-size: 20px;
+  font-weight: 300;
+  transform: translateY(-35px);
+  transition: all 0.2s ease;
+}
+
+ input:focus {
+  outline: 0;
+  border-color: #32ACED;
+}
+
+ input:focus + label, 
+ input:valid + label {
+  transform: translateY(-60px);
+  font-size: 16px;
+  font-weight: 400;
+  outline: 0; 
+  color: #32ACED;  
+}
+}
+}

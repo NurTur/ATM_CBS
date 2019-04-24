@@ -1,12 +1,46 @@
 //IMPORTS
-var express = require("express");
-var mysql = require('mysql');
+const express = require("express");
+const mysql = require('mysql');
+const app = express();
 
 
-var app = express();
-var now = new Date();
+const bodyParser = require('body-parser');
+
+const cors = require("cors");
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
+
+app.get('/cards/:card_number', async (req, res)=> {
+  await db.query(`SELECT * FROM cards WHERE number='${req.params.card_number}'`, 
+  (err, rows, fields)=> {
+    res.status(200).json({card:rows});      
+  });
+});
+
+app.get('/almaty_communals/:schet', async (req, res)=> {
+  await db.query(`SELECT * FROM almaty_communals WHERE personalAccount='${req.params.schet}'`, 
+  (err, rows, fields)=> {
+    res.status(200).json({schet:rows});      
+  });
+});
+
+app.get('/astana_communals/:schet', async (req, res)=> {
+  await db.query(`SELECT * FROM astana_communals WHERE personalAccount='${req.params.schet}'`, 
+  (err, rows, fields)=> {
+    res.status(200).json({schet:rows});      
+  });
+});
+
+app.get('/shymkent_communals/:schet', async (req, res)=> {
+  await db.query(`SELECT * FROM shymkent_communals WHERE personalAccount='${req.params.schet}'`, 
+  (err, rows, fields)=> {
+    res.status(200).json({schet:rows});      
+  });
+});
 
 
 
@@ -28,6 +62,22 @@ app.get('/', function (req, res, next) {
     });
   });
 
+
+app.get('/cards', function (req, res, next) {
+    console.log("request received for /cards");
+    var sqldata = [];
+    db.query('SELECT * FROM cards ORDER BY id', function (err, rows, fields) {
+        if (err) {
+            res.status(500).json({ "status_code": 500, "status_message": "internal server error" });
+            console.error(JSON.stringify(err));
+            //return here to prevent second res call
+            return;
+        } else {
+            console.log(rows[0]);
+            res.send('cards');
+        }
+    });
+  });
 
 
 
