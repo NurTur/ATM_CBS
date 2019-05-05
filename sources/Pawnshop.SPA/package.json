@@ -1,0 +1,53 @@
+{
+  "name": "pawnshop.spa",
+  "repository": {
+    "type": "git",
+    "url": "https://ainaline.visualstudio.com/defaultcollection/Pawnshop/Pawnshop%20Team/_git/Pawnshop"
+  },
+  "description": "Client SPA",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Independed Developers Group | devman.kz",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack --config ./webpack.prod.config.js --progress"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "jwt-decode": "^2.1.0",
+    "moment": "^2.17.1",
+    "react": "^15.3.2",
+    "react-bootstrap": "^0.30.6",
+    "react-datepicker": "^0.41.1",
+    "react-dom": "^15.3.2",
+    "react-input-mask": "^0.7.7",
+    "react-notification-system-redux": "^1.0.10",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "react-router-dom": "^5.0.0",
+    "redux": "^3.6.0",
+    "redux-form": "^6.2.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "bootstrap": "^3.3.7",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "redux-logger": "^2.7.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

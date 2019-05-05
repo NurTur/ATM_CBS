@@ -1,0 +1,12 @@
+C:\Alibek\sources\Pawnshop.Data\bin\Debug\netstandard2.0\Pawnshop.Data.deps.json
+C:\Alibek\sources\Pawnshop.Data\bin\Debug\netstandard2.0\Pawnshop.Data.dll
+C:\Alibek\sources\Pawnshop.Data\bin\Debug\netstandard2.0\Pawnshop.Data.pdb
+C:\Alibek\sources\Pawnshop.Data\bin\Debug\netstandard2.0\Pawnshop.Core.dll
+C:\Alibek\sources\Pawnshop.Data\bin\Debug\netstandard2.0\Pawnshop.Core.pdb
+C:\Alibek\sources\Pawnshop.Data\obj\Debug\netstandard2.0\Pawnshop.Data.csprojAssemblyReference.cache
+C:\Alibek\sources\Pawnshop.Data\obj\Debug\netstandard2.0\Pawnshop.Data.csproj.CoreCompileInputs.cache
+C:\Alibek\sources\Pawnshop.Data\obj\Debug\netstandard2.0\Pawnshop.Data.AssemblyInfoInputs.cache
+C:\Alibek\sources\Pawnshop.Data\obj\Debug\netstandard2.0\Pawnshop.Data.AssemblyInfo.cs
+C:\Alibek\sources\Pawnshop.Data\obj\Debug\netstandard2.0\Pawnshop.Data.csproj.CopyComplete
+C:\Alibek\sources\Pawnshop.Data\obj\Debug\netstandard2.0\Pawnshop.Data.dll
+C:\Alibek\sources\Pawnshop.Data\obj\Debug\netstandard2.0\Pawnshop.Data.pdb

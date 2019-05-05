@@ -1,0 +1,17 @@
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Web.deps.json
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Web.runtimeconfig.json
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Web.runtimeconfig.dev.json
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Web.dll
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Web.pdb
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Core.dll
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Data.dll
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Core.pdb
+C:\Alibek\sources\Pawnshop.Web\bin\Debug\netcoreapp2.1\Pawnshop.Data.pdb
+C:\Alibek\sources\Pawnshop.Web\obj\Debug\netcoreapp2.1\Pawnshop.Web.csprojAssemblyReference.cache
+C:\Alibek\sources\Pawnshop.Web\obj\Debug\netcoreapp2.1\Pawnshop.Web.csproj.CoreCompileInputs.cache
+C:\Alibek\sources\Pawnshop.Web\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Alibek\sources\Pawnshop.Web\obj\Debug\netcoreapp2.1\Pawnshop.Web.AssemblyInfoInputs.cache
+C:\Alibek\sources\Pawnshop.Web\obj\Debug\netcoreapp2.1\Pawnshop.Web.AssemblyInfo.cs
+C:\Alibek\sources\Pawnshop.Web\obj\Debug\netcoreapp2.1\Pawnshop.Web.csproj.CopyComplete
+C:\Alibek\sources\Pawnshop.Web\obj\Debug\netcoreapp2.1\Pawnshop.Web.dll
+C:\Alibek\sources\Pawnshop.Web\obj\Debug\netcoreapp2.1\Pawnshop.Web.pdb

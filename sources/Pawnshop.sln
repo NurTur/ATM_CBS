@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pawnshop.Core", "Pawnshop.Core\Pawnshop.Core.csproj", "{00CA90D9-B194-45D6-9D7D-9683E7ADEAE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pawnshop.Data", "Pawnshop.Data\Pawnshop.Data.csproj", "{CE1AE7C4-EDDC-4A74-8CA3-ED735FDC2543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pawnshop.Web", "Pawnshop.Web\Pawnshop.Web.csproj", "{5A6C776B-CF6B-45BD-9E3E-CADE716C3334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pawnshop.Migrate", "Pawnshop.Migrate\Pawnshop.Migrate.csproj", "{79DE538D-B2A2-478C-A6AB-7166BC403F0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00CA90D9-B194-45D6-9D7D-9683E7ADEAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CA90D9-B194-45D6-9D7D-9683E7ADEAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CA90D9-B194-45D6-9D7D-9683E7ADEAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CA90D9-B194-45D6-9D7D-9683E7ADEAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1AE7C4-EDDC-4A74-8CA3-ED735FDC2543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1AE7C4-EDDC-4A74-8CA3-ED735FDC2543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1AE7C4-EDDC-4A74-8CA3-ED735FDC2543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1AE7C4-EDDC-4A74-8CA3-ED735FDC2543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A6C776B-CF6B-45BD-9E3E-CADE716C3334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6C776B-CF6B-45BD-9E3E-CADE716C3334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6C776B-CF6B-45BD-9E3E-CADE716C3334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6C776B-CF6B-45BD-9E3E-CADE716C3334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DE538D-B2A2-478C-A6AB-7166BC403F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DE538D-B2A2-478C-A6AB-7166BC403F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DE538D-B2A2-478C-A6AB-7166BC403F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DE538D-B2A2-478C-A6AB-7166BC403F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

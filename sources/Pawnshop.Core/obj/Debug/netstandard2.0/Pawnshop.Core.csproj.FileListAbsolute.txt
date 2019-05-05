@@ -1,0 +1,9 @@
+C:\Alibek\sources\Pawnshop.Core\bin\Debug\netstandard2.0\Pawnshop.Core.deps.json
+C:\Alibek\sources\Pawnshop.Core\bin\Debug\netstandard2.0\Pawnshop.Core.dll
+C:\Alibek\sources\Pawnshop.Core\bin\Debug\netstandard2.0\Pawnshop.Core.pdb
+C:\Alibek\sources\Pawnshop.Core\obj\Debug\netstandard2.0\Pawnshop.Core.csprojAssemblyReference.cache
+C:\Alibek\sources\Pawnshop.Core\obj\Debug\netstandard2.0\Pawnshop.Core.csproj.CoreCompileInputs.cache
+C:\Alibek\sources\Pawnshop.Core\obj\Debug\netstandard2.0\Pawnshop.Core.AssemblyInfoInputs.cache
+C:\Alibek\sources\Pawnshop.Core\obj\Debug\netstandard2.0\Pawnshop.Core.AssemblyInfo.cs
+C:\Alibek\sources\Pawnshop.Core\obj\Debug\netstandard2.0\Pawnshop.Core.dll
+C:\Alibek\sources\Pawnshop.Core\obj\Debug\netstandard2.0\Pawnshop.Core.pdb
