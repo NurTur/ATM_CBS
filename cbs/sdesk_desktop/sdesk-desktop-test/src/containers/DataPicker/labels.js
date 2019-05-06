@@ -1,0 +1,21 @@
+export default {
+	city: `Город`,
+	closed: `Закрытые`,
+	contractor: `Субподрядчик`,
+	customer: `Заказчик`,
+	device: `BNA`,
+	malfunction: `Причины неисправности`,
+	performer: `Исполнитель`,
+	period: `Период`,
+	serviceType: `Вид работ`,
+	ticketStatus: `Статус заявки`,
+	ticketType: `Тип заявки`,
+	typeModel: `Тип-модель`,
+	vendor: `Производитель`,
+	waitBeefore: `Ожидание до`,
+	warranty: `Гарантия`,
+	warrantyBeefore: `Гарантия до`,
+	cbsWarranty: `Гарантия CBS`,
+	cbsWarrantyBeefore: `Гарантия CBS до`,
+	commentDevice: `Устройство в комментарии`
+}

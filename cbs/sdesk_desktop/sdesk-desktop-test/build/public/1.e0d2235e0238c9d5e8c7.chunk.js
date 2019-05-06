@@ -1,0 +1,1 @@
+webpackJsonp([1],{"./src/components/NotFoundPage/index.jsx":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var l=t("./node_modules/react/index.js"),a=t.n(l);n.default=(()=>a.a.createElement("h1",null,a.a.createElement("br",null),a.a.createElement("br",null),"Страница не найдена"))}});
