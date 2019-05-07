@@ -1,25 +1,30 @@
 const path = require('path');
-const webpack = require("webpack");
+const webpack = require('webpack');
 const merge = require("webpack-merge");
 
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = env => {
     const { PLATFORM, VERSION } = env;
-
     return merge([
         {
-            entry: {    
-                "main":  path.resolve(__dirname,'../src/index.js')     
+            entry: {
+                main: path.resolve(__dirname, '../src/index.js')
             },
             output: {
                 path: path.resolve(__dirname, '../build'),
-                filename: '[name].bundle.js' 
+                filename: '[name].bundle.js'
             },
-          
+            resolve: {
+                alias: {
+                    Public: path.resolve(__dirname, '../public'),
+                    Components: path.resolve(__dirname, '../src/components/'),
+                    Styles: path.resolve(__dirname, '../src/styles/'),
+                }
+            },
             module: {
                 rules: [
                     {
@@ -30,35 +35,48 @@ module.exports = env => {
                         }
                     },
                     {
-                        test: /\.json$/,
-                        loader: 'json'
-                    },{
                         test: /\.css$/,
-                        loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-                    },{
+                        use: [
+                            PLATFORM === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+                            'css-loader']
+                    },
+                    {
                         test: /\.less$/,
-                        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader')
-                    },{
-                        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                        loader: 'url-loader?limit=100'
+                        use: [
+                            PLATFORM === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+                            'css-loader', 'less-loader']
+                    },
+                    {
+                        test: /\.(eot|svg|otf|ttf|woff|woff2)$/,
+                        use: `file-loader`
+                    },
+                    {
+                        test: /\.(jpg|png|gif)$/,
+                        use: [
+                            `file-loader`,
+                            {
+                                loader: `image-webpack-loader`
+                            }
+                        ]
                     }
                 ]
             },
             plugins: [
-                new webpack.HashedModuleIdsPlugin(),
                 new HtmlWebpackPlugin({
                     template: './src/index.html',
-                    filename: 'index.html'
+                    filename: './index.html'
                 }),
                 new webpack.DefinePlugin({
-                    'process.env.VERSION': JSON.stringify(VERSION),
-                    'process.env.PLATFORM': JSON.stringify(PLATFORM)
+                    'process.env.VERSION': JSON.stringify(env.VERSION),
+                    'process.env.PLATFORM': JSON.stringify(env.PLATFORM)
                 }),
-                new CopyWebpackPlugin([{ from: 'public/images' }])
+                new CopyWebpackPlugin([{ from: 'public' }]),
             ],
         }
     ])
 };
+
+
 
 
 

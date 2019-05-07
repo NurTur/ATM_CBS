@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./shared/header.jsx";
+import "./styles/base.less";
 
 class Main extends React.Component {
-    render() {
-    return (<div>Nurbolat</div>)
+  render() {
+    return (<Header />)
+
   }
 }
 

@@ -16,7 +16,7 @@ const prodConfiguration = env => {
             
             optimization: {
                 minimizer: [new TerserPlugin()],
-                runtimeChunk: 'single',
+               /* runtimeChunk: 'single',
                 splitChunks: {
                     chunks: 'all',
                     maxInitialRequests: Infinity,
@@ -34,7 +34,7 @@ const prodConfiguration = env => {
                             },
                         },
                     },
-                },
+                },*/
             },
 
             plugins: [
